@@ -1,0 +1,45 @@
+<!-- contacto.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Día del Idioma</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Día del Idioma</h1>
+    </header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Tabla.html">Tabla</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <section>
+            <h2>Contáctanos</h2>
+            <form id="formContacto" onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <button onmouseover="cambiarFondo()">Cambiar fondo</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Proyecto Estudiantil - Día del Idioma</p>
+    </footer>
+</body>
+</html>
